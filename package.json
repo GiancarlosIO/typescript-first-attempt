@@ -1,8 +1,9 @@
 {
-  "name": "slack-clone-client",
+  "name": "webpack-hmr-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "giancarlos.isasi@gmail.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run server & npm run client:start",
