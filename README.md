@@ -3,8 +3,8 @@ A boilerplate with:
 * eslint
 * react
 * react-dom
-* react-apollo
 * react-router
+* css-modules
 * styled-components
 * react-hot-loader
 
