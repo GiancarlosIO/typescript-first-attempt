@@ -9,11 +9,11 @@ const {
 
 // const loaders = require('./loaders/');
 
-module.exports = {
+const config = {
   optimization: {
-    minimize: true,
+    minimize: false,
   },
-  mode: 'production',
+  devtool: 'source-map',
   entry: {
     vendor: entries.vendor,
   },
@@ -38,3 +38,9 @@ module.exports = {
   ],
 };
 
+if (process.env === 'production') {
+  config.optimization.minimize = true;
+  config.devtool = 'none';
+}
+
+module.exports = config;
