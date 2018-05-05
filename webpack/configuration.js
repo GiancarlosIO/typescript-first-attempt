@@ -9,11 +9,6 @@ const entries = {
   vendor: [
     'react',
     'react-dom',
-    'react-apollo',
-    'apollo-client',
-    'apollo-link',
-    'apollo-link-error',
-    'apollo-link-http',
     'styled-components',
   ],
   app: getPath('index.js'),

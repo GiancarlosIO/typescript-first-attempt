@@ -2,6 +2,7 @@
 const path = require('path');
 // const ClosureCompiler = require('google-closure-compiler-js').webpack;
 const webpack = require('webpack');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer'); // eslint-disable-line
 
 const {
   entries,
@@ -35,12 +36,15 @@ const config = {
       path: path.join(__dirname, '..', 'server/public/dist', '[name]-manifest.json'),
       name: '[name]_[hash]',
     }),
+
+    // activa if your need
+    new BundleAnalyzerPlugin(),
   ],
 };
 
-if (process.env === 'production') {
+if (process.env.NODE_ENV === 'production') {
   config.optimization.minimize = true;
-  config.devtool = 'none';
+  config.devtool = '(none)';
 }
 
 module.exports = config;
