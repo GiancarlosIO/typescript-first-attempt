@@ -11,12 +11,14 @@ const entries = {
     'react-dom',
     'styled-components',
   ],
-  app: getPath('index.js'),
+  app: getPath('index.tsx'),
 };
 
 const extensions = [
   '.js',
   '.graphql',
+  '.tsx',
+  '.ts',
 ];
 
 const alias = {
