@@ -1,8 +1,12 @@
 import * as React from 'react';
 
-export interface HelloProps { title: string; name: string; }
+import { logs } from '../Utils/logs/index';
 
-export class App extends React.Component<HelloProps, {}> {
+logs();
+
+export interface IHelloProps { title: string; name: string; }
+
+export class App extends React.Component<IHelloProps, {}> {
   render() {
     return (
       <div>
